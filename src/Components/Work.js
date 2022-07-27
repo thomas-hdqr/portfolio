@@ -1,7 +1,7 @@
 export default function work() {
     return (
-        <div className="work">
-            <p>This is a the Work</p>
+        <div id="work" className="work">
+            <h2>Recent work</h2>
         </div>
     )
 }

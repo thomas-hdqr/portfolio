@@ -5,13 +5,14 @@ export default function navbar() {
                 <p>Thomas Haudiquer</p>
             </div>
             <div className="navbar-menu">
-                <p>work</p>
+                <p><a href="#work">work</a></p>
                 <p>,</p>
-                <p>about</p>
+                &nbsp;
+                <p><a href="#about">about</a></p>
                 <p>,</p>
-                <p>contact</p>
+                &nbsp;
+                <p><a href="#contact">contact</a></p>
             </div>
         </div>
-
     )
 }

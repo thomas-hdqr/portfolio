@@ -4,18 +4,155 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   font-family: 'Satoshi', sans-serif;
   font-weight: 500;
   letter-spacing: -0.5px;
 }
 
 
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 85px;
+}
+
+p {
+  font-size: 22px;
+}
+
+
+/* For the links styling */
+
+a {
+  color: inherit; 
+  text-decoration: none;
+  position: relative;
+}
+
+/* Link animation (navbar) */
+
+a:hover {
+  color: #000;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* For the mesh gradient effect */
+
+.gradient-wrap {
+  overflow: hidden;
+  width: 100%;
+  height:100vh;
+  position: relative;
+}
+.meshgradient>.color {
+  width: 100%;
+  height:100%;
+  position: absolute;
+    display: flex;
+  align-items: center;
+  transform: scale(3) rotate(0deg);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+}
+
+.c1 {
+  background: radial-gradient(#ec8123 25%, transparent 50%);
+  background-size: 60% 80%;
+   background-position: 0 0;
+  animation: c1 8s infinite linear;
+}
+.c2 {
+  background:  radial-gradient(#4f8c83 25%, transparent 50%);
+  background-size: 70% 80%;
+   background-position: 0 100%;
+  animation: c2 10s infinite linear;
+}
+
+.c3 {
+  background:   radial-gradient(#4f8c83 25%, transparent 50%);
+    background-size: 80% 80%;
+   background-position: 50% 0;
+    animation: c3 5s infinite linear;
+}
+.c4 {
+  background:    radial-gradient(#efbdc8 25%, transparent 50%);
+  background-size: 80% 80%;
+   background-position: 50% 100%;
+   animation: c4 6s infinite linear;
+}
+@keyframes c1 {
+  50%{ 
+  background-size: 80% 80%;
+   background-position: 50% 100%;
+    transform: scale(3) rotate(-75deg);
+  }
+}
+
+@keyframes c2 {
+  50%{ 
+    background-size: 80% 80%;
+   background-position: 50% 0;
+    transform: scale(3) rotate(90deg);
+  }
+}
+@keyframes c3 {
+  50%{ 
+  background-size: 70% 80%;
+   background-position: 0 100%;
+   transform: scale(3) rotate(8deg);
+  }
+}
+
+@keyframes c4 {
+  50%{ 
+   background-position: 0 0;
+  animation: c1 10s infinite;
+    transform: scale(3) rotate(-36deg);
+  }
+}
+
+
 /* Navbar styling */
 
 .navbar {
+  padding: 10px 50px;
   border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky; top: 0
 }
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+}
+
 
 
 /* Homepage styling */
@@ -24,11 +161,17 @@ html {
   border: 1px solid red;
 }
 
+.homepage-text {
+  border: 1px solid red;
+  padding: 150px 50px 10px 50px;
+}
+
 
 /* Work part styling */
 
 .work {
   border: 1px solid red;
+  padding: 10px 50px;
 }
 
 
@@ -36,6 +179,7 @@ html {
 
 .about {
   border: 1px solid red;
+  padding: 10px 50px;
 }
 
 
@@ -43,4 +187,5 @@ html {
 
 .contact {
   border: 1px solid red;
+  padding: 10px 50px;
 }
