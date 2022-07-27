@@ -1,0 +1,46 @@
+/* General styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+  border: 1px solid red;
+}
+
+
+/* Homepage styling */
+
+.homepage {
+  border: 1px solid red;
+}
+
+
+/* Work part styling */
+
+.work {
+  border: 1px solid red;
+}
+
+
+/* About part styling */
+
+.about {
+  border: 1px solid red;
+}
+
+
+/* Contact part styling */
+
+.contact {
+  border: 1px solid red;
+}
