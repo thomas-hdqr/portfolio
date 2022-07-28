@@ -12,15 +12,15 @@ body {
 
 
 h1 {
-  font-size: 70px;
+  font-size: 4.375rem;
 }
 
 h2 {
-  font-size: 85px;
+  font-size: 5.313rem;
 }
 
 p {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 
@@ -38,7 +38,7 @@ a:hover {
   color: #000;
 }
 
-a::before {
+.navbar-menu a::before {
   content: "";
   position: absolute;
   display: block;
@@ -58,7 +58,7 @@ a:hover::before {
 
 /* For the mesh gradient effect */
 
-.gradient-wrap {
+/* .gradient-wrap {
   overflow: hidden;
   width: 100%;
   height:100vh;
@@ -134,14 +134,13 @@ a:hover::before {
   animation: c1 10s infinite;
     transform: scale(3) rotate(-36deg);
   }
-}
+}  */
 
 
 /* Navbar styling */
 
 .navbar {
   padding: 10px 50px;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -157,20 +156,32 @@ a:hover::before {
 
 /* Homepage styling */
 
-.homepage {
-  border: 1px solid red;
+.homepage-text {
+  padding: 150px 50px 10px 50px;
 }
 
-.homepage-text {
-  border: 1px solid red;
-  padding: 150px 50px 10px 50px;
+
+.homepage-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.arrow {
+  height: 28px;
+  margin-right: 10px;
+}
+
+.contactme {
+  margin-top: 0;
+  cursor: pointer;
 }
 
 
 /* Work part styling */
 
 .work {
-  border: 1px solid red;
   padding: 10px 50px;
 }
 
@@ -178,7 +189,6 @@ a:hover::before {
 /* About part styling */
 
 .about {
-  border: 1px solid red;
   padding: 10px 50px;
 }
 
@@ -186,6 +196,5 @@ a:hover::before {
 /* Contact part styling */
 
 .contact {
-  border: 1px solid red;
   padding: 10px 50px;
 }
