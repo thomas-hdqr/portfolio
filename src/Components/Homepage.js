@@ -1,8 +1,14 @@
 import React, {useState} from 'react'
 
-export default function homepage() {
+export default function Homepage() {
     
-    
+    const [isHovering, setIsHovering] = useState(false);
+    const handleMouseOver = () => {
+      setIsHovering(true);
+    };
+    const handleMouseOut = () => {
+      setIsHovering(false);
+    };
 
     return (
         <div className="homepage">
@@ -18,7 +24,7 @@ export default function homepage() {
                         </div>
                         <div className="homepage-contact">
                         <img className="arrow" src="./images/right-arrow-svgrepo-com.svg" alt=""></img>
-                        <div className="contactme" onClick={() =>  navigator.clipboard.writeText('thomashaudiquer@gmail.com')}>Contact me</div>
+                        <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="contactme" onClick={() =>  navigator.clipboard.writeText('thomashaudiquer@gmail.com')}>{isHovering ? 'Copy email?' : 'Contact me'}</div>
                         </div>
                     </div>
                 </div>

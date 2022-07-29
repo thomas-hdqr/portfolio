@@ -157,7 +157,7 @@ a:hover::before {
 /* Homepage styling */
 
 .homepage-text {
-  padding: 150px 50px 10px 50px;
+  padding: 150px 350px 10px 50px;
 }
 
 
@@ -176,6 +176,8 @@ a:hover::before {
 .contactme {
   margin-top: 0;
   cursor: pointer;
+  font-size: 1.375rem;
+
 }
 
 

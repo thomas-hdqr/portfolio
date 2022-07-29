@@ -1,4 +1,4 @@
-export default function about() {
+export default function About() {
     return (
         <div id="about" className="about">
             <div>
