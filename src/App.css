@@ -58,7 +58,7 @@ a:hover::before {
 
 /* For the mesh gradient effect */
 
-/* .gradient-wrap {
+.gradient-wrap {
   overflow: hidden;
   width: 100%;
   height:100vh;
@@ -134,7 +134,7 @@ a:hover::before {
   animation: c1 10s infinite;
     transform: scale(3) rotate(-36deg);
   }
-}  */
+} 
 
 
 /* Navbar styling */
@@ -199,4 +199,9 @@ a:hover::before {
 
 .contact {
   padding: 10px 50px;
+}
+
+.emailaddress {
+  font-size: 7.75rem;
+  flex-wrap: wrap;
 }
