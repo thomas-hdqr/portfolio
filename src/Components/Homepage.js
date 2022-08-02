@@ -25,7 +25,12 @@ export default function Homepage() {
                         </div>
                         <div className="homepage-contact">
                         <img className="arrow" src="./images/right-arrow-svgrepo-com.svg" alt=""></img>
-                        <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="contactme" onClick={() =>  navigator.clipboard.writeText('thomashaudiquer@gmail.com')}>{isHovering ? 'Copy email?' : 'Contact me'}</div>
+                        <div 
+                        onMouseOver={handleMouseOver} 
+                        onMouseOut={handleMouseOut} 
+                        className="contactme" 
+                        onClick={() =>  navigator.clipboard.writeText('thomashaudiquer@gmail.com')}>
+                            {isHovering ? 'Copy email?' : 'Contact me'}</div>
                         </div>
                 </div>
             </div>

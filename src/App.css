@@ -214,6 +214,14 @@ a:hover::before {
 }
 
 
+.framer-example {
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+  background: purple;
+  border-radius: 10px;
+}
+
 /* About part styling */
 
 .about {
