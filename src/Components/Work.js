@@ -1,6 +1,7 @@
 import Projectsdata from './Projectsdata';
 import Projectcard from './Projectcard';
 
+
 export default function Work() {
     const projectElements = Projectsdata.map(project => {
         return <Projectcard 

@@ -184,8 +184,20 @@ a:hover::before {
 
 /* Work part styling */
 
-.work-title {
-  padding: 10px 50px;
+@keyframes textAnimation {
+  0.0%{
+      transform: skew(90deg) rotate3d(0, 1, 1, 180deg);
+  }
+  100%{
+  }
+  39.5%{
+      transform: skew(0deg);
+  }
+}
+  
+  .work-title {
+    padding: 10px 50px;
+    animation: textAnimation 4s ease 100ms  normal none;
 }
 
 .project-list {
