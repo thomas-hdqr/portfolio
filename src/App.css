@@ -8,6 +8,7 @@ body {
   font-family: 'Satoshi', sans-serif;
   font-weight: 500;
   letter-spacing: -0.5px;
+  background-color: #ffffff;
 }
 
 
@@ -16,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5.313rem;
+  font-size: 3.313rem;
 }
 
 p {
@@ -145,6 +146,7 @@ a:hover::before {
   flex-direction: row;
   justify-content: space-between;
   position: sticky; top: 0;
+  mix-blend-mode: difference;
 }
 
 .navbar-menu {
@@ -152,7 +154,9 @@ a:hover::before {
   flex-direction: row;
 }
 
-
+.navbar p {
+  color:rgb(255, 255, 255)
+}
 
 /* Homepage styling */
 
@@ -214,14 +218,6 @@ a:hover::before {
 }
 
 
-.framer-example {
-  margin: 0 auto;
-  height: 150px;
-  width: 150px;
-  background: purple;
-  border-radius: 10px;
-}
-
 /* About part styling */
 
 .about {
@@ -237,5 +233,5 @@ a:hover::before {
 
 .emailaddress {
   font-size: 7.75rem;
-  flex-wrap: wrap;
+  word-wrap: break-word;
 }
