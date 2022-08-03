@@ -11,8 +11,8 @@ export default function Homepage() {
     };
 
     return (
-        <div className="homepage">
-            <div className="gradient-wrap">
+        <div className="gradient-wrap">
+                <div className="homepage">
                 <div className="meshgradient">
                     <div className="color c1"></div>
                     <div className="color c2"></div>

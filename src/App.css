@@ -8,7 +8,6 @@ body {
   font-family: 'Satoshi', sans-serif;
   font-weight: 500;
   letter-spacing: -0.5px;
-  background-color: #ffffff;
 }
 
 
@@ -39,7 +38,7 @@ a:hover {
   color: #000;
 }
 
-.navbar-menu a::before {
+.navbar-menu a::before, .footer-menu a::before {
   content: "";
   position: absolute;
   display: block;
@@ -154,9 +153,10 @@ a:hover::before {
   flex-direction: row;
 }
 
-.navbar p {
+/* .navbar p {
   color:rgb(255, 255, 255)
-}
+} */
+
 
 /* Homepage styling */
 
@@ -234,4 +234,12 @@ a:hover::before {
 .emailaddress {
   font-size: 7.75rem;
   word-wrap: break-word;
+}
+
+/* Footer menu */
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
