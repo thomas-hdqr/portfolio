@@ -5,13 +5,13 @@ export default function Contact() {
                 <h2 className="contact-work">Want to work together?</h2>
                 <a className="emailaddress" href="mailto:thomashaudiquer@gmail.com">thomashaudiquer@<br></br>gmail.com</a>
                 <div className="footer-menu">
-                    <p><a href="#">linkedin</a></p>
+                    <p><a href="https://www.linkedin.com/in/thomas-jhdqr/">linkedin</a></p>
                     <p>,</p>
                     &nbsp;
-                    <p><a href="#">github</a></p>
+                    <p><a href="https://github.com/thomas-hdqr">github</a></p>
                     <p>,</p>
                     &nbsp;
-                    <p><a href="#">codepen</a></p>
+                    <p><a href="https://codepen.io/thomas-hdqr">codepen</a></p>
                 </div>
             </div>
         );
