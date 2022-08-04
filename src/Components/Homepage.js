@@ -1,7 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
+import { TweenMax } from 'gsap';
 
 export default function Homepage() {
-    
+
+    // For the fade in effect
+    let app = useRef(null);
+    useEffect(() => {
+        TweenMax.to(app, 0, {css: {visibility: 'visible'}});
+    }, [])
+
+    // For the "contact me" hover effect
     const [isHovering, setIsHovering] = useState(false);
     const handleMouseOver = () => {
       setIsHovering(true);
@@ -11,14 +19,7 @@ export default function Homepage() {
     };
 
     return (
-        <div className="gradient-wrap">
-                <div className="homepage">
-                <div className="meshgradient">
-                    <div className="color c1"></div>
-                    <div className="color c2"></div>
-                    <div className="color c3"></div>
-                    <div className="color c4"></div>
-                    </div>
+                <div className="homepage" ref={el => app = el}>
                     <div className="homepage-text">
                         <div className="homepage-title">
                         <h1 className="title">Hey i’m Thomas, a web developer based in Paris, France</h1>
@@ -34,6 +35,5 @@ export default function Homepage() {
                         </div>
                 </div>
             </div>
-        </div>
     )
 }
