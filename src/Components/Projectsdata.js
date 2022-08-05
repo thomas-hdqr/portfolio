@@ -5,6 +5,7 @@ export default [
         title: "Uber like",
         description: "Create a replica of Uber",
         tech: "React, Redux, React-Router, Firebase",
+        link: "https://uber-like-app.herokuapp.com/",
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ export default [
         title: "Uber like",
         description: "Create a replica of Uber",
         tech: "React, Redux, React-Router, Firebase",
+        link: "https://uber-like-app.herokuapp.com/",
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export default [
         title: "Uber like",
         description: "Create a replica of Uber",
         tech: "React, Redux, React-Router, Firebase",
+        link: "https://uber-like-app.herokuapp.com/",
     },
     {
         id: 4,
@@ -26,5 +29,6 @@ export default [
         title: "Uber like",
         description: "Create a replica of Uber",
         tech: "React, Redux, React-Router, Firebase",
-    },
+        link: "https://uber-like-app.herokuapp.com/",
+    }
 ]

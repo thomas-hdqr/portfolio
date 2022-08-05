@@ -80,10 +80,6 @@ a:hover::before {
 /* Homepage styling */
 
 
-.homepage {
-  visibility: hidden;
-}
-
 .homepage-text {
   padding: 150px 350px 10px 70px;
   position: relative;
@@ -110,9 +106,6 @@ a:hover::before {
 }
 
 
-
-
-
 /* Work part styling */
   
 .work-title {
@@ -125,6 +118,7 @@ a:hover::before {
   gap: 0;
   overflow-x: auto;
   padding: 20px 0px;
+  cursor: grab;
 }
 
 
@@ -139,9 +133,29 @@ a:hover::before {
   border-bottom: 1px solid black;
 }
 
+
+.project >p {
+  /* z-index: 1; */
+}
+
+
+.project-btn {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px
+}
+
+.project-btn >a>p {
+  text-align: center;
+  color: red;
+}
+
+
+
 .project-image {
   width: 100%;
   object-fit: cover;
+  /* z-index: 0; */
 }
 
 
