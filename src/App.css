@@ -116,7 +116,7 @@ a:hover::before {
 /* Work part styling */
   
 .work-title {
-  padding: 10px 70px;
+  padding: 200px 70px 10px 70px;
 }
 
 .project-list {
