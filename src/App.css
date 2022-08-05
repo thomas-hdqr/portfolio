@@ -136,18 +136,19 @@ a:hover::before {
 
 .project >p {
   /* z-index: 1; */
+  padding: 0 50px;
 }
 
 
 .project-btn {
+  margin: 50px;
   cursor: pointer;
   border: 1px solid black;
-  border-radius: 10px
+  border-radius: 50px
 }
 
 .project-btn >a>p {
   text-align: center;
-  color: red;
 }
 
 
