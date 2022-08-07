@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
-// import {gsap } from 'gsap';
+import Navbar from './Navbar'
+
 
 export default function Homepage() {
 
@@ -13,7 +14,8 @@ export default function Homepage() {
     };
 
     return (
-                <div className="homepage">
+        <div className="homepage">
+                    <Navbar />
                     <div className="homepage-text">
                         <div className="homepage-title">
                             <h1 className="title">
