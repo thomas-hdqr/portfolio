@@ -202,7 +202,7 @@ a:hover::before {
 /* About part styling */
 
 .about {
-  padding: 100px 200px;
+  padding: 100px 200px 0px 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
@@ -214,6 +214,13 @@ a:hover::before {
 
 .about-text-2 {
   margin-left: 50px;
+}
+
+
+.me-image {
+  text-align: center;
+  padding: 0px 200px 100px 200px;
+  rotate: 5deg;
 }
 
 
