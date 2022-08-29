@@ -18,9 +18,9 @@ export default function Work() {
 
 
     return (
-        <div id="work" className="work">
+        <section id="work" className="work">
                 <h2 className="work-title">Recent work</h2>
                 <div className="project-list">{projectElements}</div>
-        </div>
+        </section>
     )
 }

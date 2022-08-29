@@ -1,7 +1,7 @@
 export default function Contact() {
 
     return (
-            <div id="contact" className="contact">
+            <section id="contact" className="contact">
                 <h2 className="contact-work">Want to work together?</h2>
                 <a className="emailaddress" href="mailto:thomashaudiquer@gmail.com">thomashaudiquer@<br></br>gmail.com</a>
                 <div className="footer-menu">
@@ -13,7 +13,7 @@ export default function Contact() {
                     &nbsp;
                     <p><a href="https://codepen.io/thomas-hdqr">codepen</a></p>
                 </div>
-            </div>
+            </section>
         );
     }
 
