@@ -33,6 +33,7 @@ export default function Homepage() {
 
 
 
+
     return (
         <section className="homepage">
                     <Navbar />
@@ -46,7 +47,9 @@ export default function Homepage() {
                             <h1 className="title">
                                 <motion.div
                                   variants={text}
-                                >Hey i’m Thomas, 
+                                  whileHover={{ scale: 1.1 }}
+                                >
+                                  Hey i’m <span>Thomas, </span>
                                 </motion.div>
                                 <motion.div
                                   variants={text}

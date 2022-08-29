@@ -3,7 +3,6 @@ import Projectsdata from './Projectsdata';
 import Projectcard from './Projectcard';
 
 
-
 export default function Work() {
 
 
