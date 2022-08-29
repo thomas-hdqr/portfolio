@@ -1,65 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
-import {gsap, Sine} from 'gsap'
+import { motion } from "framer-motion";
 
 
 export default function Homepage() {
-
-
-    // trying to get an animated background
-    const randomX = random(-400, 400);
-    const randomY = random(-200, 200);
-    const randomDelay = random(0, 50);
-    const randomTime = random(6, 12);
-    const randomTime2 = random(5, 6);
-    const randomAngle = random(-30, 150);
-    
-    const blurs = gsap.utils.toArray(".blur");
-    blurs.forEach((blur) => {
-      gsap.set(blur, {
-        x: randomX(-1),
-        y: randomX(1),
-        rotation: randomAngle(-1)
-      });
-    
-      moveX(blur, 1);
-      moveY(blur, -1);
-      rotate(blur, 1);
-    });
-    
-    function rotate(target, direction) {
-      gsap.to(target, randomTime2(), {
-        rotation: randomAngle(direction),
-        // delay: randomDelay(),
-        ease: Sine.easeInOut,
-        onComplete: rotate,
-        onCompleteParams: [target, direction * -1]
-      });
-    }
-    
-    function moveX(target, direction) {
-      gsap.to(target, randomTime(), {
-        x: randomX(direction),
-        ease: Sine.easeInOut,
-        onComplete: moveX,
-        onCompleteParams: [target, direction * -1]
-      });
-    }
-    
-    function moveY(target, direction) {
-      gsap.to(target, randomTime(), {
-        y: randomY(direction),
-        ease: Sine.easeInOut,
-        onComplete: moveY,
-        onCompleteParams: [target, direction * -1]
-      });
-    }
-    
-    function random(min, max) {
-      const delta = max - min;
-      return (direction = 1) => (min + delta * Math.random()) * direction;
-    }
-
 
 
     // For the "contact me" hover effect
@@ -71,18 +15,49 @@ export default function Homepage() {
       setIsHovering(false);
     };
 
+
+
+
+    // animation for the text
+    const textAnimation = {
+      show: { opacity: 1, 
+      transition: {staggerChildren: 0.2,}, 
+      x: 0, y: 0,},
+      hidden: { opacity: 0}
+    };
+
+    const text = {
+      hidden: { opacity: 0, x: 0, y: 50,},
+      show: { opacity: 1, x: 0, y: 0, transition: {type: "spring", stiffness: 100, damping: 15}}
+    }
+
+
+
     return (
         <section className="homepage">
                     <Navbar />
-                    <div class="blur"></div>
-                    <div class="blur"></div>
-                    <div class="blur"></div>
-                    <div className="homepage-text">
+                    <motion.div 
+                    variants={textAnimation}
+                    initial="hidden"
+                    animate="show"
+                    className="homepage-text"
+                    >
                         <div className="homepage-title">
                             <h1 className="title">
-                                <div>Hey i’m Thomas, </div>
-                                <div>a web developer </div>
-                                <div>based in Paris, France</div>
+                                <motion.div
+                                  variants={text}
+                                >Hey i’m Thomas, 
+                                </motion.div>
+                                <motion.div
+                                  variants={text}
+                                >
+                                  a web developer 
+                                </motion.div>
+                                <motion.div
+                                  variants={text}
+                                >
+                                  based in Paris, France
+                                </motion.div>
                             </h1>
                         </div>
                             <div className="homepage-contact">
@@ -95,7 +70,7 @@ export default function Homepage() {
                                     {isHovering ? 'Copy email?' : 'Contact me'}
                                 </div>
                             </div>
-                </div>
+                </motion.div>
             </section>
     )
 }

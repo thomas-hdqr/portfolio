@@ -77,42 +77,6 @@ a:hover::before {
 
 /* Homepage styling */
 
-:root {
-  --color: pink;
-  --blur-1-size: clamp(400px, 60vw, 60vw);
-  --blur-2-size: clamp(300px, 40vw, 40vw);
-  --blur-3-size: clamp(100px, 10vw, 10vw);
-  --blur-amount: clamp(40px, 5vw, 90px);
-}
-
-.blur {
-  position: absolute;
-  z-index: 1;
-  border-radius: 900px;
-  filter: blur(var(--blur-amount));
-  background: var(--color);
-}
-
-.blur:nth-child(1) {
-  height: var(--blur-1-size);
-  width: calc(var(--blur-1-size) * 1.1);
-}
-
-.blur:nth-child(2) {
-  filter: blur(var(--blur-amount)) hue-rotate(135deg) brightness(1.3);
-  height: var(--blur-2-size);
-  width: calc(var(--blur-2-size) * 0.75);
-  top: 20vh;
-  right: 20vh;
-}
-
-.blur:nth-child(3) {
-  filter: blur(var(--blur-amount)) hue-rotate(-135deg);
-  height: var(--blur-3-size);
-  width: calc(var(--blur-3-size) * 2);
-  bottom: 20vh;
-  left: 20vw;
-}
 
 .homepage {
   position: relative;
@@ -220,7 +184,6 @@ a:hover::before {
 .me-image {
   text-align: center;
   padding: 0px 200px 100px 200px;
-  rotate: 5deg;
 }
 
 
