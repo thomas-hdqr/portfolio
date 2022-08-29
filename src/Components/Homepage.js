@@ -74,6 +74,9 @@ export default function Homepage() {
     return (
         <section className="homepage">
                     <Navbar />
+                    <div class="blur"></div>
+                    <div class="blur"></div>
+                    <div class="blur"></div>
                     <div className="homepage-text">
                         <div className="homepage-title">
                             <h1 className="title">
