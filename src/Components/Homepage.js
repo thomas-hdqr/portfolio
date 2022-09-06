@@ -47,7 +47,6 @@ export default function Homepage() {
                             <h1 className="title">
                                 <motion.div
                                   variants={text}
-                                  whileHover={{ scale: 1.1 }}
                                 >
                                   Hey i’m <span>Thomas, </span>
                                 </motion.div>
