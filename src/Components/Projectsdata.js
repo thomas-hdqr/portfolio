@@ -19,11 +19,11 @@ export default [
     },
     {
         id: 3,
-        image: "./images/ubereats-app.jpeg",
-        title: "Uber like",
-        description: "Create a replica of Uber",
-        tech: "React, Redux, React-Router, Firebase",
-        link: "https://uber-like-app.herokuapp.com/",
+        image: "./images/tiktokclone.png",
+        title: "TikTok Clone",
+        description: "Rebuild the popular app TikTok",
+        tech: "React.js, MaterialUI",
+        link: "https://tiktok-th.vercel.app/",
     },
     {
         id: 4,
