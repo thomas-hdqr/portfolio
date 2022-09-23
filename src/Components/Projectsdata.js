@@ -10,6 +10,14 @@ export default [
         link: "https://hoobank-bank-app.netlify.app/",
     },
     {
+        id: 4,
+        image: "./images/airbnb.png",
+        title: "A new Airbnb",
+        description: "Building another version of Airbnb",
+        tech: "React, Next.js, Tailwindcss, Mapbox",
+        link: "https://airbnb-clone-th.vercel.app/",
+    },
+    {
         id: 2,
         image: "./images/Realtor.png",
         title: "Realtor",
@@ -24,14 +32,6 @@ export default [
         description: "Rebuild the popular app TikTok",
         tech: "React.js, MaterialUI",
         link: "https://tiktok-th.vercel.app/",
-    },
-    {
-        id: 4,
-        image: "./images/ubereats-app.jpeg",
-        title: "Uber like",
-        description: "Create a replica of Uber",
-        tech: "React, Redux, React-Router, Firebase",
-        link: "https://uber-like-app.herokuapp.com/",
     }
 ]
 
